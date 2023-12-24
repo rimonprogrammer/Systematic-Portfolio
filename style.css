@@ -1,0 +1,537 @@
+/* =============================================
+------------------Common css-------------------
+==============================================*/
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-size: 1.6rem;
+    background: white; 
+    font-family: Georgia, sans-serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.container-fluid{
+    max-width: 965px;
+}
+img{
+    cursor: pointer;
+}
+/* =============================================
+------------------Common css-------------------
+==============================================*/
+
+
+
+
+/* =============================================
+-------------Header section start---------------
+==============================================*/
+/* ===header top section start==== */
+.header-top{
+    min-height: 6rem;
+    display: flex;
+    align-items: center;
+    background-color:  #ba2e1f;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0 0 10px rgb(203, 204, 208);
+}
+.header-top .container-fluid{
+    max-width: 1000px;
+}
+.header-top .header-search{
+    display: flex;
+    justify-content: end;
+}
+.container-fluid .col-md-6 li{
+    list-style: none;
+    padding-top: 0.8rem;
+}
+.container-fluid .col-md-6 a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.7rem;
+    padding-right: 2rem;
+    position: relative;
+}
+.container-fluid .col-md-6 a:hover{
+    color: #01fdf5;
+}
+.container-fluid .col-md-6 a::after{
+    top: 0.1rem;
+    right: 1rem;
+    content: "";
+    height: 1.5rem;
+    width: 0.1rem;
+    background: rgb(255, 255, 255);
+    position: absolute;
+}
+.container-fluid .col-md-6 a:last-child:after{
+    display: none;
+}
+
+
+/* search section start*/
+.header-search input{
+    padding: 0.4rem 2rem 0.4rem 1rem;
+    width: 23rem;
+    outline: none;
+    border: none;
+    margin-top: .5rem;
+    border-radius: 2rem;
+}
+.header-search img{
+    position: relative;
+    right: 3.5rem;
+    cursor: pointer;
+}
+/* search section end*/
+/* ===header top section end==== */
+
+
+
+/* ===header middle section start==== */
+.header-middle{
+    padding-top: 1rem;
+}
+.logo{
+    cursor: pointer;
+}
+.social-link{
+    display: flex;
+    padding-top: 1rem;
+    justify-content: end;
+}
+.social-link i{
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    background-color: rgb(16, 2, 40);
+}
+.social-link a:hover i{
+    font-size: 2.4rem;
+    color: black;
+    background-color: orange;
+}
+
+/* ===header middle section end==== */
+
+
+
+/* ===navbar section start==== */
+.navbar{
+    margin-top: 1rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    background: #393939;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+.navbar-nav {
+    padding-left: 1.5rem;
+}
+.navbar-nav li{
+    color: white;
+    padding-right: 2.5rem;
+    position: relative;
+}
+.nav-item a{
+    color: rgb(255, 255, 255);
+}
+.nav-item a:hover{
+    color: orangered;
+}
+.nav-item a:focus{
+    color: rgb(66, 251, 10);
+}
+.dropdown a:hover{
+    color: orangered;
+}
+.dropdown a:focus{
+    color: rgb(66, 251, 10);
+}
+
+/* ===navbar section end==== */
+/* dropdown style */
+
+
+.collapse ul ul{
+    background: #ba2e1f;
+    width: 180px;
+    top: 33px;
+    height: 500;
+}
+.collapse ul ul li a{
+    color: rgb(255, 255, 255);
+    width: 100%;
+    font-size: 1.6rem;
+}
+/* dropdown style */
+/* =============================================
+-------------Header section end---------------
+==============================================*/
+
+
+
+
+/* =============================================
+------------- section-1 start---------------
+==============================================*/
+.section1{
+    padding-top: 1rem;
+}
+.section1 .carousel-item{
+    width: 100%;
+    overflow: hidden;
+    max-height: 50rem;
+}
+.section1 img{
+    width: 100%;
+    border-radius: 1rem;
+    max-height: 50rem;
+    cursor: pointer;
+    border: 4px solid rgb(180, 174, 174);
+}
+.section1  span{
+    padding: 2rem;
+    color: black;
+    border-radius: 2rem;
+    background-color: rgb(120, 119, 119);
+}
+/* =============================================
+------------- section-1  end---------------
+==============================================*/
+
+
+
+
+
+
+/* =============================================
+------------- section-1 start---------------
+==============================================*/
+.section2{
+    margin-top: 10rem;
+}
+.card{
+    border: none;
+}
+.section2 .col-md-5 .img-fluid{
+    border-radius: 1rem;
+    border: 1px solid blue;
+    max-width: 100%;
+}
+.section2 h1{
+    padding-top: 6rem;
+    padding-left: 2rem;
+    font-size: 5rem;
+    font-weight: 550;
+}
+.section2 p{
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    color: #4b4949;
+    font-size: 1.8rem;
+}
+.section2 a{
+    color: #ba2e1f;
+    padding-top: 2rem;
+    font-size: 1.8rem;
+    padding-left: 1rem;
+    text-decoration: none;
+    padding-left: 2rem;
+}
+.section2 a:hover{
+    color: black;
+}
+/* =============================================
+------------- section-2  end---------------
+==============================================*/
+
+
+
+
+
+
+/* =============================================
+-------------- section-3 start---------------
+============================================== */
+.section3{
+    padding: 8rem 0 8rem 0;
+    margin-top: 10rem;
+    background: #F2F2F2;
+}
+.section3 h2{
+    color: #262424;
+    font-weight: bold;
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+}
+
+.section2 .col-md-5 img {
+    max-width: 32rem;
+    cursor: pointer;
+}
+
+.section3 .Services .d-flex img{
+    width: 6.4rem;
+    height: 6.4rem;
+}
+.section3 img{
+    border-radius: 1rem;
+}
+.section3 p{
+    font-size: 1.5rem;
+    color: #727272;
+}
+.section3 .area-a{
+    padding-left: 1rem;
+}
+.section3 .area-a a{
+    text-decoration: none;
+    color: #ba2e1f;
+}
+.section3 .area-a a:hover{
+    color: black;
+}
+.section3 .Services div{
+    padding-bottom: 2.5rem;
+}
+.section3 .Services h3{
+    color: #5a5a5a;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.section3 .Services h3,
+p{
+    padding-left: 1rem;
+}
+.aria{
+    padding-top: 7rem;
+}
+.section3 .client-aria h4{
+    color: #5a5a5a;
+    padding-top: 1rem;
+    padding-left: .5rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+/* =============================================
+-------------- section-3 end---------------
+============================================== */
+
+
+
+
+/* =============================================
+-------------- section-4 start---------------
+============================================== */
+.section4{
+    padding-top: 5rem;
+}
+.section4 h5{
+    color: #262424;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+.section4  p{
+    color: #6d6d6d;
+    font-weight: 500;
+    line-height: 2.6rem;
+    margin-left: -1rem;
+}
+.section4 .quick-link p{
+    cursor: pointer;
+    font-size: 1.5rem;
+    line-height: 1.7rem;
+}
+.section4 .quick-link p:hover{
+    color: orangered;
+}
+.section4 .quick-link p> img{
+    padding-right: 1rem;
+}
+/* post start*/
+.section4 .post-aria h6{
+    font-weight: 550;
+    color: #262424;
+    font-size: 1.6rem;
+}
+.section4 .post-aria .p-area{
+    font-size: 1.5rem;
+    font-weight: 550;
+    color: #262424;
+}
+
+.section4 .post-aria .a-area a{
+    color: orangered;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.section4 .post-aria .a-area a> img{
+    padding-left: .5rem;
+}
+/* post end*/
+
+/* contact start*/
+.section4 .contact input{
+    height: 4rem;
+    border: none;
+    outline: none;
+    background: rgb(220, 218, 218);
+    margin-bottom: 1rem;
+}
+.section4 .contact input::placeholder{
+    font-size: 1.3rem;
+}
+.section4 .contact textarea{
+    border-radius: .5rem;
+    max-width: 100%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    background: rgb(220, 218, 218);
+}
+.section4 .contact input:last-child{
+    width: 10rem;
+    color: orangered;
+    border-radius: 1rem;
+}
+/* contact end*/
+/* =============================================
+-------------- section-4 end---------------
+============================================== */
+
+
+
+
+
+/* =============================================
+--------------footer section start---------------
+============================================== */
+footer{
+    min-height: 4rem;
+    background-color: #dad7d7;
+}
+/* =============================================
+--------------footer section end---------------
+============================================== */
+
+
+
+
+
+
+
+
+/* ************===============-----++++++++++++++++-----==============************** */
+
+
+
+
+/* =============================================
+--------------responsive section start---------------
+============================================== */
+@media (max-width:768px){
+    .container-fluid .col-md-6{
+        display: flex;
+        justify-content: center;
+      }
+      .container-fluid .col-md-6 a{
+        padding-right: 1rem;
+    }
+    .container-fluid .col-md-6 a::after{
+        right: 0.1rem;
+    }
+    .header-search input{
+        margin-top: -2px;
+    }
+/* header section end */
+
+/* section 2 start */
+    .section2 .col-md-5{
+        display: flex;
+        justify-content: center;
+    }
+    .section2 .col-md-7 h1 {
+        padding-top: 1rem;
+        font-size: 3rem;
+    }
+    .section2 .col-md-7 h1 {
+        text-align: center;
+    }
+    .section2 .col-md-7 P{
+        text-align: center;
+    }
+    .section2 .headAtag{
+        justify-content: center;
+    }
+/* section 2 end */
+
+
+/* section 3 start */
+
+    .aria{
+        padding-left: 1rem;
+        margin-top: -7rem;
+    }
+    .section3 .Services,
+    .section3 .client-aria{
+        margin-top: 2.5rem;
+    }
+/* section 3 end */
+ 
+
+/* section 4 start */
+
+    .section4 .col-md-3 hr:first-child{
+        margin-top: 5rem;
+
+    }
+    .section4 .post-aria .a-area{
+        justify-content: start;
+    }
+/* section 4 end */
+    footer{
+        margin-bottom: -.8rem;
+    }
+    footer p{
+        padding-bottom: .5rem;
+    }
+
+}
+
+
+@media (max-width:992px){
+/* header section start */
+    .section2 h1 {
+        font-size: 5rem;
+      }
+      .section2 .headAtag{
+        display: flex;
+        padding-left: 1rem;
+        justify-content: start;
+    }
+
+}
+
+/* =============================================
+--------------responsive section end---------------
+============================================== */
